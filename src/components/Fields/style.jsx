@@ -38,10 +38,11 @@ export const TitleDiv = styled.div`
 
 export const CardsWr = styled.div`
     width: 100%;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 `
 
 export const Card = styled.div`
@@ -91,11 +92,14 @@ export const Card = styled.div`
         font-size: 13.6119px;
         line-height: 20px;
         text-align: center;
-        text-decoration-line: underline;
         text-transform: capitalize;
         color: #5ABA4A;
         cursor: pointer;
         margin-left: 27px;
+
+        :hover{
+            text-decoration-line: underline;
+        }
     }
 
     .ani-div{
