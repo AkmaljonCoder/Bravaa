@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, ButtonWr, Container, Link, LinkWr, Logo, Menus } from './style';
 import LogoImg from '../../assets/bravaa.svg';
 
@@ -6,11 +6,27 @@ import {BurgerSpin as Burger} from 'react-burger-icons' // react burger icon
 
 const Navbar = () => {
   const [isClosed, setIsClosed] = useState(false);
-
   const toggleClosed = () => setIsClosed(!isClosed);
 
+  const [scroll, setScroll] = useState(false);
+
+    const changeColor = ()=>{
+        if(window.scrollY >= 50){
+        setScroll(true)
+        }else{
+        setScroll(false)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll',changeColor, true)
+        return ()=>{
+        window.removeEventListener('scroll',changeColor)
+        }
+    }, [])
+
   return (
-    <div className='navbar1'>
+    <div className={scroll===false? 'navbar1' : 'navbar2'}>
       <Container>
         <Logo src={LogoImg} />
 

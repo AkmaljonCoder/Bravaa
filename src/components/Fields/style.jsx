@@ -123,4 +123,8 @@ export const Card = styled.div`
     &:hover h3{
         color: #D4D4D4;
     }
+
+    @media (max-width:444px) {
+        width: 80%;
+    }
 `
