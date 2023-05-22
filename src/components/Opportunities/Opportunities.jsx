@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, LinkWr, Paragraph, TextDiv, Title } from './style'
+import { Container, ImagesDiv, LinkWr, Paragraph, TextDiv, Title } from './style'
 
 import Tick from '../../assets/Opportunities/tick.svg'
 
@@ -37,6 +37,11 @@ const Opportunities = () => {
                 <h3>100+ awards</h3>
             </LinkWr>
         </TextDiv>
+        <ImagesDiv>
+            <img src={FirstPic} alt="" className="first grid-image" />
+            <img src={SecondPic} alt="" className="second grid-image" />
+            <img src={ThirdPic} alt="" className="third grid-image" />
+        </ImagesDiv>
     </Container>
   )
 }

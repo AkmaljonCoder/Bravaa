@@ -46,6 +46,5 @@ body{
   position: fixed;
   z-index: 1;
   transition: all ease 0.3s;
-  background-color: rgba(0, 0, 0, 0.363);
-  backdrop-filter: blur(20px);
+  background-color: #030712
 }

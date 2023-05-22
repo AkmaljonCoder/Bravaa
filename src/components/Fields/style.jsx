@@ -42,7 +42,7 @@ export const CardsWr = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 `
 
 export const Card = styled.div`
