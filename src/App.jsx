@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Fields from './components/Fields/Fields';
+import Opportunities from './components/Opportunities/Opportunities';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <Header/>
       <Fields/>
+      <Opportunities/>
     </>
   );
 }
