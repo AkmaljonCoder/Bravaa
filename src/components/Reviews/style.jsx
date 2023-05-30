@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import RatingItem from '@mui/material/Rating';
 
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
 export const Container = styled.div`
     width: 100%;
     max-width: 1440px;
@@ -46,6 +49,7 @@ export const SwiperWr = styled.div`
     .swiper {
         width: 100%;
         height: 100%;
+        z-index: 0;
     }
 
     .swiper-slide {
@@ -57,12 +61,28 @@ export const SwiperWr = styled.div`
     .swiper-pagination-bullet{
         background-color: #5ABA4A !important;
     }
+
+    .swiper-button-prev, .swiper-button-next{
+        color: #5ABA4A !important;
+    }
 `
 
 export const SwiperImg = styled.img`
     width: auto;
     height: 100%;
+    padding: 20px;
     margin-right: 50px;
+    border-radius: 40px;
+
+    @media (max-width:920px) {
+        margin-right: 10px;
+    }
+
+    @media (max-width:790px) {
+        width: 250px;
+        height: 350px;
+        object-fit: contain;
+    }
 `
 
 export const TextDiv = styled.div`
@@ -101,6 +121,17 @@ export const TextDiv = styled.div`
         color: #D4D4D4;
         margin-bottom: 13px;
     }
+
+    @media (max-width:920px) {
+        margin-left: 10px;
+    }
+
+    @media (max-width:790px) {
+        p{
+            font-size: 10px;
+            max-width: 300px;
+        }
+    }
 `
 
 export const Rating = styled(RatingItem)`
@@ -108,20 +139,5 @@ export const Rating = styled(RatingItem)`
     padding: 5px 10px;
     background-color: #3d3d3d;
     border-radius: 10px;
-`
-
-export const ControlDiv = styled.div`
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-
-export const Control = styled.div`
-    width: 43px;
-    height: 43px;
-    background-color: #5ABA4A;
-    border-radius: 50%;
 `
 
