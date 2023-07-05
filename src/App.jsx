@@ -9,6 +9,7 @@ import Opportunities from './components/Opportunities/Opportunities';
 import Prices from './components/Prices/Prices';
 import Reviews from './components/Reviews/Reviews';
 import Submit from './components/Submit/Submit';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Prices/>
       <Reviews/>
       <Submit/>
+      <Footer/>
     </>
   );
 }

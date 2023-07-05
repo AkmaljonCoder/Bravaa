@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import RatingItem from '@mui/material/Rating';
 
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-
 export const Container = styled.div`
     width: 100%;
     max-width: 1440px;
@@ -94,7 +91,7 @@ export const RespImg = styled.img`
     border-radius: 50%;
     border: 2px solid white;
 
-    @media (max-width:920px) {
+    @media (max-width:790px) {
         display: block;
     }
 
