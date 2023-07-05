@@ -25,30 +25,37 @@ const Navbar = () => {
         }
     }, [])
 
+    const Scrolling = (val) => {
+      window.scrollTo({
+        top:val,
+        behavior:'smooth'
+      })
+    }
+
   return (
     <div className={scroll===false? 'navbar1' : 'navbar2'}>
       <Container>
-        <Logo src={LogoImg} />
+        <Logo onClick={()=>Scrolling(0)} src={LogoImg} />
 
         <div className='burgir' onClick={toggleClosed}>
           <Burger isClosed={isClosed}/>
         </div>
 
         <LinkWr>
-          <Link>Home</Link>
-          <Link>Program</Link>
-          <Link>Community</Link>
-          <Link>Pricing</Link>
+          <Link onClick={()=>Scrolling(0)}>Home</Link>
+          <Link onClick={()=>Scrolling(0)}>Program</Link>
+          <Link onClick={()=>Scrolling(0)}>Community</Link>
+          <Link onClick={()=>Scrolling(0)}>Pricing</Link>
           <h3>|</h3>
           <Link>Login</Link>
           <Button>Sign Up</Button>
         </LinkWr>
 
         <Menus className={`${isClosed===true? 'open-menu' : ''}`}>
-          <h2 onClick={()=>setIsClosed(false)} style={{animationDelay:'0.1s'}}>Home</h2>
-          <h2 onClick={()=>setIsClosed(false)} style={{animationDelay:'0.2s'}}>Program</h2>
-          <h2 onClick={()=>setIsClosed(false)} style={{animationDelay:'0.3s'}}>Community</h2>
-          <h2 onClick={()=>setIsClosed(false)} style={{animationDelay:'0.4s'}}>Pricing</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.1s'}}>Home</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.2s'}}>Program</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.3s'}}>Community</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.4s'}}>Pricing</h2>
           <ButtonWr>
             <h2 style={{animationDelay:'0.5s'}} className='sign-in'>Sign In</h2>
             <h2 style={{animationDelay:'0.5s'}} className='middle'>|</h2>
