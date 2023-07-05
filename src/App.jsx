@@ -8,6 +8,7 @@ import Fields from './components/Fields/Fields';
 import Opportunities from './components/Opportunities/Opportunities';
 import Prices from './components/Prices/Prices';
 import Reviews from './components/Reviews/Reviews';
+import Submit from './components/Submit/Submit';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Opportunities/>
       <Prices/>
       <Reviews/>
+      <Submit/>
     </>
   );
 }

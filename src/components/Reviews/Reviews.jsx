@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Rating, SwiperImg, SwiperWr, TextDiv, TitleDiv } from './style'
+import { Container, Rating, RespImg, SwiperImg, SwiperWr, TextDiv, TitleDiv } from './style'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -69,6 +69,7 @@ const Reviews = () => {
               <SwiperSlide key={index}>
                 <SwiperImg src={item.img} />
                 <TextDiv>
+                  <RespImg src={item.img} />
                   <h1>{item.name}</h1>
                   <h2>Member</h2>
                   <Rating value={item.rate} readOnly/>

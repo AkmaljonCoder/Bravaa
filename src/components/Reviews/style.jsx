@@ -79,9 +79,27 @@ export const SwiperImg = styled.img`
     }
 
     @media (max-width:790px) {
-        width: 250px;
-        height: 350px;
-        object-fit: contain;
+        display: none;
+    }
+`
+
+export const RespImg = styled.img`
+    width: 80px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+
+    @media (max-width:920px) {
+        display: block;
+    }
+
+    @media (max-width:375px) {
+        right: 0;
     }
 `
 
@@ -91,6 +109,7 @@ export const TextDiv = styled.div`
     justify-content: center;
     align-items: start;
     margin-left: 50px;
+    position: relative;
 
     h1{
         font-style: normal;
@@ -130,6 +149,12 @@ export const TextDiv = styled.div`
         p{
             font-size: 10px;
             max-width: 300px;
+        }
+    }
+
+    @media (max-width:375px) {
+        p{
+            max-width: 230px;
         }
     }
 `
