@@ -15,7 +15,7 @@ export const Container = styled.div`
     margin-bottom: 50px;
 
     @media (max-width:900px) {
-        width: 90%;
+        width: calc(100% - 60px);
     }
 `
 

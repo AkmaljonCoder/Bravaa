@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Background from '../../assets/background.png'
+import { Close } from '@mui/icons-material';
 
 export const Container = styled.div`
     width: 100%;
@@ -11,6 +12,10 @@ export const Container = styled.div`
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+
+    .video-wrapper{
+        display: flex;
+    }
 
     @media (max-width:600px) {
         background-position: left;
@@ -136,3 +141,60 @@ export const VidButton = styled.div`
     }
     
 `
+
+export const VideoWr = styled.div`
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(20px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .video{
+        width: 60% !important;
+        height: 400px !important;
+    }
+
+    @media (max-width:768px) {
+        .video{
+            width: 500px !important;
+            height: 300px !important;
+        }
+    }
+
+    @media (max-width:590px) {
+        .video{
+            width: 80% !important;
+            height: 300px !important;
+        }
+    }
+`
+
+export const VideoTitle = styled.h1`
+    font-size: 50px;
+    font-family: 'Playfair Display';
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (max-width:768px) {
+        max-width: calc(100% - 30px);
+        font-size: 35px;
+    }
+`
+
+export const CloseBtn = styled(Close)`
+    width: 35px !important;
+    height: 35px !important;
+    color: white !important;
+    cursor: pointer !important;
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+`
+
+

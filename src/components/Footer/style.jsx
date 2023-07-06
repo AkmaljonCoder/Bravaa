@@ -71,7 +71,7 @@ export const FacebookIc = styled(Facebook)`
     color: white !important;
 
     &:hover{
-        color: blue !important;
+        color: #3b5998 !important;
     }
 `
 
@@ -84,7 +84,7 @@ export const TwitterIc = styled(Twitter)`
     color: white !important;
 
     &:hover{
-        color: skyblue !important;
+        color: #00acee  !important;
     }
 `
 
@@ -97,7 +97,7 @@ export const InstagramIc = styled(Instagram)`
     color: white !important;
 
     &:hover{
-        color: pink !important;
+        color: #d62976 !important;
     }
 `
 

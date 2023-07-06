@@ -43,9 +43,9 @@ const Navbar = () => {
 
         <LinkWr>
           <Link onClick={()=>Scrolling(0)}>Home</Link>
-          <Link onClick={()=>Scrolling(0)}>Program</Link>
-          <Link onClick={()=>Scrolling(0)}>Community</Link>
-          <Link onClick={()=>Scrolling(0)}>Pricing</Link>
+          <Link onClick={()=>Scrolling(550)}>Program</Link>
+          <Link onClick={()=>Scrolling(1000)}>Community</Link>
+          <Link onClick={()=>Scrolling(1600)}>Pricing</Link>
           <h3>|</h3>
           <Link>Login</Link>
           <Button>Sign Up</Button>
@@ -53,9 +53,9 @@ const Navbar = () => {
 
         <Menus className={`${isClosed===true? 'open-menu' : ''}`}>
           <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.1s'}}>Home</h2>
-          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.2s'}}>Program</h2>
-          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.3s'}}>Community</h2>
-          <h2 onClick={()=>{setIsClosed(false);Scrolling(0)}} style={{animationDelay:'0.4s'}}>Pricing</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(450)}} style={{animationDelay:'0.2s'}}>Program</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(1750)}} style={{animationDelay:'0.3s'}}>Community</h2>
+          <h2 onClick={()=>{setIsClosed(false);Scrolling(3100)}} style={{animationDelay:'0.4s'}}>Pricing</h2>
           <ButtonWr>
             <h2 style={{animationDelay:'0.5s'}} className='sign-in'>Sign In</h2>
             <h2 style={{animationDelay:'0.5s'}} className='middle'>|</h2>
@@ -63,7 +63,7 @@ const Navbar = () => {
           </ButtonWr>
         </Menus>
 
-      </Container> 
+      </Container>
     </div>
   )
 }
