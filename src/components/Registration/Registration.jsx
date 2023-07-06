@@ -1,11 +1,14 @@
 import React from 'react'
-import {Container, Form} from './style'
+import {Container, Form, Mode} from './style'
+import { useState } from 'react';
 
 const Registration = () => {
+  const [sign, setSign] = useState('in');
+
   return (
     <Container>
       <Form>
-
+        
       </Form>
     </Container>
   )
