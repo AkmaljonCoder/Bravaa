@@ -25,10 +25,46 @@ export const Form = styled.div`
 `
 
 export const Mode = styled.div`
-    width: 300px;
+    width: auto;
     height: 60px;
     background-color: #778da9;
-    padding: 5px;
     border-radius: 5px;
-    
+    position: absolute;
+    top: -30px;
+    display: flex;
+    align-items: center;
+
+    button{
+        width: 150px;
+        height: calc(100% - 10px);
+        background-color: transparent;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        z-index: 2;
+        margin: 0 10px;
+    }
+
+    .switcher{
+        width: 150px;
+        margin-left: 180px;
+        height: calc(100% - 10px);
+        position: absolute;
+        border-radius: 5px;
+        transition: all ease 0.5s;
+        background-color: green;
+    }
+
+    .up{
+        margin-left: 10px;
+        background-color: green;
+    }
+
+    .in{
+        margin-left: 180px;
+        background-color: orange;
+    }
 `

@@ -22,10 +22,10 @@ function App() {
       openReg={openReg}
       setOpenReg={setOpenReg}
       />
-      {/* <Registration
+      <Registration
       openReg={openReg}
       setOpenReg={setOpenReg}
-      /> */}
+      />
       <Header/>
       <Fields/>
       <Opportunities/>
