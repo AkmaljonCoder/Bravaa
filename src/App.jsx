@@ -11,7 +11,7 @@ import Prices from './components/Prices/Prices';
 import Reviews from './components/Reviews/Reviews';
 import Submit from './components/Submit/Submit';
 import Footer from './components/Footer/Footer';
-// import Registration from './components/Registration/Registration';
+import Registration from './components/Registration/Registration';
 
 const App = () => {
   const [sign, setSign] = useState('up');
