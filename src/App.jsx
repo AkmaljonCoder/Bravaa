@@ -13,18 +13,23 @@ import Submit from './components/Submit/Submit';
 import Footer from './components/Footer/Footer';
 import Registration from './components/Registration/Registration';
 
-function App() {
-  const [openReg, setOpenReg] = useState(false);
+const App = () => {
+  const [sign, setSign] = useState('up');
+  const [reg, setReg] = useState(false);
 
   return (
     <>
       <Navbar
-      openReg={openReg}
-      setOpenReg={setOpenReg}
+      reg={reg}
+      setReg={setReg}
+      sign={sign}
+      setSign={setSign}
       />
       <Registration
-      openReg={openReg}
-      setOpenReg={setOpenReg}
+      reg={reg}
+      setReg={setReg}
+      sign={sign}
+      setSign={setSign}
       />
       <Header/>
       <Fields/>

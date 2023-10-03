@@ -48,3 +48,13 @@ body{
   transition: all ease 0.3s;
   background-color: #030712
 }
+
+.hide-reg{
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.show-reg{
+  opacity: 1 !important;
+  display: flex !important;
+}

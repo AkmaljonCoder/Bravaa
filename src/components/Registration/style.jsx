@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Close } from '@mui/icons-material';
 
 export const Container = styled.div`
     width: 100%;
@@ -8,6 +9,7 @@ export const Container = styled.div`
     align-items: center;
     position: fixed;
     background-color: #1b263b;
+    transition: all ease 0.3s;
     z-index: 2;
 `
 
@@ -67,4 +69,14 @@ export const Mode = styled.div`
         margin-left: 180px;
         background-color: orange;
     }
+`
+
+export const CloseIc = styled(Close)`
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    cursor: pointer;
 `

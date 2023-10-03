@@ -1,12 +1,11 @@
 import React from 'react'
-import {Container, Form, Mode} from './style'
+import {CloseIc, Container, Form, Mode} from './style'
 import { useState } from 'react';
 
-const Registration = () => {
-  const [sign, setSign] = useState('up');
+const Registration = ({reg, setReg, sign, setSign}) => {
 
   return (
-    <Container>
+    <Container className={reg ? 'show-reg' : 'hide-reg'}>
       <Form>
         <Mode>
           <button onClick={()=>setSign('up')}>sign up</button>
@@ -14,6 +13,7 @@ const Registration = () => {
           <div className={`switcher ${sign==='up'? 'up' : 'in'}`}></div>
         </Mode>
       </Form>
+      <CloseIc onClick={()=>setReg(false)} />
     </Container>
   )
 }

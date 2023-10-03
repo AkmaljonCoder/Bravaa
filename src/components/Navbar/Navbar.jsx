@@ -4,7 +4,7 @@ import LogoImg from '../../assets/bravaa.svg';
 
 import {BurgerSpin as Burger} from 'react-burger-icons' // react burger icon
 
-const Navbar = () => {
+const Navbar = ({setReg, setSign}) => {
   const [isClosed, setIsClosed] = useState(false);
   const toggleClosed = () => setIsClosed(!isClosed);
 
@@ -47,8 +47,8 @@ const Navbar = () => {
           <Link onClick={()=>Scrolling(1000)}>Community</Link>
           <Link onClick={()=>Scrolling(1600)}>Pricing</Link>
           <h3>|</h3>
-          <Link>Login</Link>
-          <Button>Sign Up</Button>
+          <Link onClick={()=>{setReg(true);setSign('in')}}>Sign In</Link>
+          <Button onClick={()=>{setReg(true);setSign('up')}}>Sign Up</Button>
         </LinkWr>
 
         <Menus className={`${isClosed===true? 'open-menu' : ''}`}>
